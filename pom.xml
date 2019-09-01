@@ -7,11 +7,10 @@
     <groupId>groupId</groupId>
     <artifactId>CucumberBasics</artifactId>
     <version>1.0-SNAPSHOT</version>
-				<properties> 
-					<maven.compiler.source>11</maven.compiler.source> 
-					<maven.compiler.target>11</maven.compiler.target> 
-					<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding> 
-				</properties>
+    <properties>
+	<maven.compiler.source>1.7</maven.compiler.source>
+	<maven.compiler.target>1.7</maven.compiler.target>
+    </properties>
     <build>
         <plugins>
             <plugin>
@@ -53,7 +52,18 @@
     </build>
 
     <dependencies>
+    <dependency>
+        <groupId>io.cucumber</groupId>
+        <artifactId>cucumber-java</artifactId>
+        <version>4.3.1</version>
+    </dependency>
 
+    <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-testng -->
+    <dependency>
+        <groupId>io.cucumber</groupId>
+        <artifactId>cucumber-testng</artifactId>
+        <version>4.3.1</version>
+    </dependency>
         <!-- https://mvnrepository.com/artifact/info.cukes/cucumber-java -->
         <dependency>
             <groupId>info.cukes</groupId>
@@ -96,6 +106,11 @@
             <artifactId>cucumber-testng</artifactId>
             <version>1.2.5</version>
         </dependency>
+		             <dependency>
+                  <groupId>info.cukes</groupId>
+                  <artifactId>cucumber-testng</artifactId>
+                  <version>1.2.2</version>
+             </dependency>
 
 
         <!-- https://mvnrepository.com/artifact/org.testng/testng -->

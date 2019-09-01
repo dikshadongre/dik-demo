@@ -5,6 +5,8 @@ import cucumber.api.Scenario;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;  
+
 /**
  * Created by Karthik on 31/01/2019.
  */
@@ -31,8 +33,11 @@ public class Hook extends BaseUtil{
 
 
         //Chrome driver
-        System.setProperty("webdriver.chrome.driver", "C:\\Libs\\chromedriver");
-        base.Driver = new ChromeDriver();
+        /*System.setProperty("webdriver.chrome.driver", "C:\\Libs\\chromedriver.exe");
+        base.Driver = new ChromeDriver();*/
+		
+		System.setProperty("webdriver.ie.driver", "C:\\Libs\\IEDriverServer.exe"); 
+		base.Driver = new InternetExplorerDriver();
     }
 
 
